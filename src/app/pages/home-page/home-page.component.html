@@ -1,0 +1,5 @@
+<ng-container *ngIf="files$ | async as files">
+  <app-query-box [formControl]="queryControl"></app-query-box>
+  <app-items-view [files]="files">
+  </app-items-view>
+</ng-container>
